@@ -41,18 +41,43 @@ const printDataType = (num) => {
 // Write a JavaScript program that adds 2 numbers together.
 
 const simpleAdd = (numOne, numTwo) => {
-  return numOne + numTwo
+  const result = numOne + numTwo
+  return result
+}
+
+const sum = (result) => {
+
 }
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-
+const paramTrue = (x, y) => {
+  if (x && y === true) {
+    console.log("Both parameters are true!")
+  } else {
+    console.log("error!")
+  }
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-
+const halfTrue = (x, y) => {
+  if (x || y === true) {
+    console.log("One of these parameters is true and the other is false!")
+  } else {
+    console.log("Please declare your variables properly.")
+  }
+}
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const paramFalse = (x, y) => {
+  if (!x && !y) {
+    console.log("Both parameters are false!")
+  } else {
+    console.log("Please try again.")
+  }
+}
 
 // ***************************
 //         PART TWO
