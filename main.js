@@ -15,12 +15,16 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
+const numToString = (num) => {
+  return num.toString()
+}
 
 
 // Write a JavaScript program to convert a string to the number.
 
-
+const stringToNum = (string) => {
+  return Number(string)
+}
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -30,11 +34,15 @@ const displayDate = () => {
   // * NaN
   // * String
   
+const printDataType = (num) => {
 
+}
   
 // Write a JavaScript program that adds 2 numbers together.
 
-
+const simpleAdd = (numOne, numTwo) => {
+  return numOne + numTwo
+}
 
 // Write a JavaScript program that runs only when 2 things are true.
 
