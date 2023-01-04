@@ -12,11 +12,28 @@
     <br>
     <button onclick="displayDate()">Click Me</button>
     <br>
+    <hr>
+    <!-- Number to String Conversion -->
+    <label>Turn Number to String</label>
       <input id="choosenumber" type="number" placeholder="convert to string">
-      <button onclick="stringConversion()">Convert</button>
+      <button onclick="stringConversion()">Convert to String</button>
       <div id="visiblenumtostring"></div>
     <br>
-
-    <hr/>
+    <hr>
+    <!-- String to Number Conversion -->
+    <label>Turn String to Number</label>
+    <input id="inputString" type="text" placeholder="convert to number">
+    <button onclick="numberConversion()">Convert to Number</button>
+    <div id="stringtonum"></div>
+    <br>
+    <hr>
+    <!-- Addition -->
+    <label>Insert number here:</label>
+    <input type="number" id="numOne">
+    <label>Insert Other number here</label>
+    <input type="number" id="numTwo">
+    <button onclick="simpleAdd()">add</button>
+    <div id="solution"></div>
+    <hr>
   </body>
 </html>

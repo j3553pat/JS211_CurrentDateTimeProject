@@ -32,6 +32,12 @@ const stringToNum = (string) => {
   return Number(string)
 }
 
+const numberConversion = () => {
+  const strInput = document.getElementById("inputString").value
+  const convertNum = stringToNum(strInput)
+  document.getElementById("stringtonum").innerHTML = typeof(convertNum)
+}
+
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -46,9 +52,12 @@ const stringToNum = (string) => {
   
 // Write a JavaScript program that adds 2 numbers together.
 
-const simpleAdd = (numOne, numTwo) => {
-  const result = numOne + numTwo
-  return result
+const simpleAdd = () => {
+const firstAdd = parseInt(document.getElementById("numOne").value)
+const secAdd = parseInt(document.getElementById("numTwo").value)
+const sum = firstAdd + secAdd
+
+document.getElementById("solution").innerHTML = sum
 }
 
 
