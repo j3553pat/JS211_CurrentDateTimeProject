@@ -15,8 +15,14 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-const numToString = (num) => {
+const numberToString = (num) => {
   return num.toString()
+}
+
+const stringConversion = () => {
+  const numInput = document.getElementById("choosenumber").value
+  const convertStr = numberToString(numInput)
+  document.getElementById("visiblenumtostring").innerHTML = typeof(convertStr)
 }
 
 
@@ -34,9 +40,9 @@ const stringToNum = (string) => {
   // * NaN
   // * String
   
-const printDataType = (num) => {
-
-}
+  const printDataType = (x) => {
+    return console.log(`this is a ${typeof x}`)
+  };
   
 // Write a JavaScript program that adds 2 numbers together.
 
@@ -45,9 +51,6 @@ const simpleAdd = (numOne, numTwo) => {
   return result
 }
 
-const sum = (result) => {
-
-}
 
 // Write a JavaScript program that runs only when 2 things are true.
 
