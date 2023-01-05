@@ -50,9 +50,12 @@ const numberConversion = () => {
     return console.log(`this is a ${typeof x}`)
   };
   
-const dataTypeName = () => {
-  const dataType = document.getElementById("visibledata")
-}
+ const dataTypeName = (x) => {
+  const answer = typeof document.getElementById("inputData").value
+  const finalAnswer = document.getElementById('visibledata').innerHTML = answer
+    
+
+  }
 
 // Write a JavaScript program that adds 2 numbers together.
 
@@ -75,6 +78,10 @@ const paramTrue = (x, y) => {
   }
 }
 
+const displayTruths = () => {
+
+}
+
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
 const halfTrue = (x, y) => {
@@ -85,6 +92,11 @@ const halfTrue = (x, y) => {
   }
 }
 
+const displayOneTruth = () => {
+
+}
+
+
 // Write a JavaScript program that runs when both things are not true.  
 
 const paramFalse = (x, y) => {
@@ -93,6 +105,10 @@ const paramFalse = (x, y) => {
   } else {
     console.log("Please try again.")
   }
+}
+
+const CheckFalse = () => {
+  
 }
 
 // ***************************
