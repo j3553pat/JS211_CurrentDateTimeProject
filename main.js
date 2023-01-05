@@ -50,6 +50,10 @@ const numberConversion = () => {
     return console.log(`this is a ${typeof x}`)
   };
   
+const dataTypeName = () => {
+  const dataType = document.getElementById("visibledata")
+}
+
 // Write a JavaScript program that adds 2 numbers together.
 
 const simpleAdd = () => {
