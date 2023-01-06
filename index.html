@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>JS211 Date and Time Project</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -29,7 +29,7 @@
     <hr>
     <!-- Identifying Data Types -->
     <input id="inputData">
-    <button onclick="dataTypeName()">Find out</button>
+    <button onclick="printDataType()">Find out</button>
     <div id="visibledata"></div>
     <!-- Addition -->
     <label>Insert number here:</label>
@@ -39,5 +39,17 @@
     <button onclick="simpleAdd()">add</button>
     <div id="solution"></div>
     <hr>
+    <!-- find two truths, one truth, and two false -->
+
+    <select id="truthOne">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <select id="truthTwo">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <button onclick="paramTrue()">Find</button>
+    <div id="findtruths"></div>
   </body>
 </html>
