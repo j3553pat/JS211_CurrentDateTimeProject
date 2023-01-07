@@ -14,6 +14,7 @@
     <br>
     <hr>
     <!-- Number to String Conversion -->
+    <h4>Number to string conversion</h4>
     <label>Turn Number to String</label>
       <input id="choosenumber" type="number" placeholder="convert to string">
       <button onclick="stringConversion()">Convert to String</button>
@@ -21,6 +22,7 @@
     <br>
     <hr>
     <!-- String to Number Conversion -->
+    <h4>String to number conversion</h4>
     <label>Turn String to Number</label>
     <input id="inputString" type="text" placeholder="convert to number">
     <button onclick="numberConversion()">Convert to Number</button>
@@ -28,19 +30,23 @@
     <br>
     <hr>
     <!-- Identifying Data Types -->
+    <h4>Find Data Type</h4>
     <input id="inputData">
     <button onclick="printDataType()">Find out</button>
     <div id="visibledata"></div>
+    <hr>
     <!-- Addition -->
+    <h4>Add Two Numbers</h4>
     <label>Insert number here:</label>
     <input type="number" id="numOne">
+    <br>
     <label>Insert Other number here</label>
     <input type="number" id="numTwo">
     <button onclick="simpleAdd()">add</button>
     <div id="solution"></div>
     <hr>
-    <!-- find two truths, one truth, and two false -->
-
+    <!-- find two truths-->
+    <h4>Find two truths</h4>
     <select id="truthOne">
       <option value="true">true</option>
       <option value="false">false</option>
@@ -51,5 +57,32 @@
     </select>
     <button onclick="paramTrue()">Find</button>
     <div id="findtruths"></div>
+    <hr>
+    <!-- Find one truth -->
+    <h4>In This Section Find 1 Truth</h4>
+    <select id="truthOneB">
+      <h4>Find one truth</h4>
+      <option>true</option>
+      <option>nothing</option>
+    </select>
+    <h5>OR</h5>
+    <select id="truthTwoB">
+      <option>true</option>
+      <option>false</option>
+    </select>
+    <button onclick="halfTrue()">find</button>
+    <div id="justOneTruthShown"></div>
+    <!-- Find two False -->
+    <h4>Find Two False</h4>
+    <select id="falseOne">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <select id="falseTwo">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <button onclick="paramFalse()">Find</button>
+    <div id="findFalse"></div>
   </body>
 </html>

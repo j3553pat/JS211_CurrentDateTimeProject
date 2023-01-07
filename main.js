@@ -43,20 +43,31 @@ const numberConversion = () => {
 // * NaN
 // * String
 
-
 // this will let you find the data type using a console.
 const findDataType = (x) => {
-  return typeof x
-}
+  return typeof x;
+};
 
+// this will let you find data types using the DOM
 const printDataType = (x) => {
- 
   const value = document.getElementById("inputData").value;
   const finalData = document.getElementById("visibledata");
-  const findType = findDataType(value);
-  finalData.innerHTML = findType;
-}
 
+  if (value =='undefined' || value == '') {
+    finalData.innerHTML = 'undefined'
+  } else if (value === 'true'|| value === 'false'){
+    finalData.innerHTML = typeof true
+  } else if (value == 'null' || value == 'Null') {
+    finalData.innerHTML = 'null'
+  } else if (isNaN(value) === true) {
+    finalData.innerHTML = typeof 'String'
+  } else if (!isNaN(value === false)) {
+    finalData.innerHTML = typeof 3
+  } else {
+    finalData.innerHTML = 'NaN'
+  }
+
+};
 
 // Write a JavaScript program that adds 2 numbers together.
 
@@ -70,46 +81,46 @@ const simpleAdd = () => {
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-// I only created and went with one function since ut wull still be possible to find 2 truths, 1 truth, and 2 false.
-//However, I still wrote down the rest of the functions in order to find them using the console.
 
 const paramTrue = () => {
-  
   const truthOne = document.getElementById("truthOne").value;
   const truthTwo = document.getElementById("truthTwo").value;
+  const truthsFound = document.getElementById("findtruths")
+
   if (truthOne == "true" && truthTwo == "true") {
-    document.getElementById("findtruths").innerHTML = true;
-  } else if (truthOne == "true" && truthTwo == "false") {
-    document.getElementById("findtruths").innerHTML = true;
-  } else if (truthOne == "false" && truthTwo == "true") {
-    document.getElementById("findtruths").innerHTML = true;
+    truthsFound.innerHTML = true;
   } else {
-    document.getElementById("findtruths").innerHTML = false;
+    truthsFound.innerHTML = "Find two truths.";
   }
 };
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
 const halfTrue = (x, y) => {
-  if (x || y === true) {
-    console.log("One of these parameters is true and the other is false!");
+  const truthOneB = document.getElementById("truthOneB").value
+  const truthTwoB = document.getElementById("truthTwoB").value
+  const halfTrueData = document.getElementById("justOneTruthShown")
+
+  if (truthOneB == "true" || truthTwoB == "true") {
+    halfTrueData.innerHTML = true;
   } else {
-    console.log("Please declare your variables properly.");
+    halfTrueData.innerHTML ="Please make one drop down true";
   }
 };
-
 
 // Write a JavaScript program that runs when both things are not true.
 
 const paramFalse = (x, y) => {
-  if (!x && !y) {
-    console.log("Both parameters are false!");
+  const falseOne = document.getElementById("falseOne").value
+  const falseTwo = document.getElementById("falseTwo").value
+  const falseFound = document.getElementById("findFalse")
+
+  if (falseOne == "false" && falseTwo == "false") {
+    falseFound.innerHTML = false
   } else {
-    console.log("Please try again.");
+    falseFound.innerHTML = "Find two false"
   }
 };
-
-
 
 // ***************************
 //         PART TWO
